@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Marks Entry</title>
+  </head>
+  <body>
+    <h1>Student Marks Entry</h1>
+    <table border="1">
+      <tr>
+        <td>
+          <label for="student-name">Student Name</label>
+        </td>
+        <td><input type="text" id="student-name" /></td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="unit-marks">Unit Marks</label>
+        </td>
+        <td>
+          <input type="text" id="unit-marks" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="preFinal-marks">Pre Final Marks</label>
+        </td>
+        <td>
+          <input type="text" id="preFinal-marks" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="final-marks">Final Marks</label>
+        </td>
+        <td>
+          <input type="text" id="final-marks" />
+        </td>
+      </tr>
+    </table>
+    <br />
+    <button id="result-btn">Get Result</button>
+    <br /><br />
+
+    <table border="1">
+      <tr>
+        <td>Student Name</td>
+        <td><input type="text" id="std-name" readonly /></td>
+      </tr>
+      <tr>
+        <td>Total Marks</td>
+        <td><input type="text" id="total-marks" readonly /></td>
+      </tr>
+
+      <tr>
+        <td>Highest Marks</td>
+        <td><input type="text" id="highest-marks" readonly /></td>
+      </tr>
+      <tr>
+        <td>Average</td>
+        <td><input type="text" id="average-marks" readonly /></td>
+      </tr>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
