@@ -17,7 +17,7 @@ function clearTable() {
         addStudentData();
         count++;
     } else {
-        calculateResuslt();
+        calculateResult();
     }
 
     // console.log("from cleart")
@@ -25,20 +25,21 @@ function clearTable() {
 }
 
 
-function calculateResuslt() {
+function calculateResult() {
+
 
     var totalMarks = Number(unitMarks.value) + Number(preFinalMarks.value) + Number(finalMarks.value)
     // console.log(totalMarks)
 
     var averageMarks = totalMarks / 4;
-    //display the results
-    // document.querySelector("#std-name").value = document.querySelector("#student-name").value;
-    // document.querySelector("#total-marks").value = totalMarks;
-    // document.querySelector("#average-marks").value = averageMarks;
+    // display the results
+    document.querySelector("#std-name").value = document.querySelector("#student-name").value;
+    document.querySelector("#total-marks").value = totalMarks;
+    document.querySelector("#average-marks").value = averageMarks;
 
-    var studentName = document.getElementById('student-name').value;
-    var totalMarks = document.getElementById('total-marks');
-    var averageMarks = document.getElementById('')
+    // var studentName = document.getElementById('student-name').value;
+    // var totalMarks = document.getElementById('total-marks');
+    // var averageMarks = document.getElementById('')
 
 
 
@@ -61,7 +62,7 @@ function calculateResuslt() {
 
 
 
-resultBtn.addEventListener("click", calculateResuslt);
+resultBtn.addEventListener("click", calculateResult);
 nextBtn.addEventListener("click", clearTable);
 
 
